@@ -1,0 +1,66 @@
+@media (min-width: 992px) {
+	nav .navbar {
+		&__logo {
+			height: 40px;
+		}
+		&__list {
+			flex-direction: row;
+			justify-content: space-between;
+			position: static;
+			height: 80px;
+			width: auto;
+			transform: translateX(0);
+			opacity: 1;
+			background: none;
+			overflow: hidden;
+		}
+		&__item {
+			margin-top: 0;
+			font-size: 1.6rem;
+		}
+		&__item a {
+			padding: 1.4em 1em;
+		}
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	#header {
+		background-image: url('../../../dist/img/jungle_1920.jpg');
+	}
+
+	#header .header__text h1 {
+		font-size: 3.2rem;
+	}
+	#header .header__text p {
+		font-size: 2.6rem;
+	}
+
+	div .section-tittle {
+		font-size: 3.2rem;
+	}
+
+	div .aboutus-box {
+		margin-top: 3em;
+		flex-direction: row;
+		align-items: center;
+		&__img {
+			margin-top: 0;
+			margin-right: 5em;
+			order: 0;
+			max-width: 400px;
+		}
+	}
+
+	section .hero-img {
+		background-image: url('../../../dist/img/girl-g677db6645_1280.jpg');
+
+		&__tittle {
+			p {
+				font-size: 3.5rem;
+			}
+		}
+	}
+}

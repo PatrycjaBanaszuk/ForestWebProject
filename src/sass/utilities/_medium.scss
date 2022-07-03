@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+	section .aboutus {
+		padding: 5em 0;
+	}
+	.offers {
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+}
+@media (max-width: 768px) {
+	#header .header__text {
+		align-items: center;
+	}
+}

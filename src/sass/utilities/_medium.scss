@@ -2,13 +2,18 @@
 	section .aboutus {
 		padding: 5em 0;
 	}
-	.offers {
+	#offers .offers {
 		&__cards {
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
 		}
+		&__card {
+			margin: 1em;
+			width: 45%;
+		}
 	}
+
 }
 @media (max-width: 768px) {
 	#header .header__text {

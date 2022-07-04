@@ -88,7 +88,7 @@ p {
 	&__item a {
 		padding: 1em 2em;
 		color: #000;
-		transform: color 0.3s;
+		transition: color 0.3s;
 		cursor: pointer;
 	}
 	&__item a:hover {
@@ -212,7 +212,6 @@ div .aboutus-box__text::first-line {
 }
 
 .offers {
-
 	&__info {
 		display: flex;
 		justify-content: center;
@@ -239,20 +238,12 @@ div .aboutus-box__text::first-line {
 		height: 450px;
 		color: #000;
 		text-align: center;
-		
 
 		&-info {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+			padding: 2em;
+			height: 100%;
 			border-radius: 8px;
 			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-			overflow: hidden;
 			&-tittle {
 				position: absolute;
 				left: 50%;
@@ -265,7 +256,7 @@ div .aboutus-box__text::first-line {
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
-				top: 1.2em;
+				top: 1.4em;
 				padding: 0.2em 0;
 				font-size: 5rem;
 				font-weight: bold;
@@ -275,16 +266,24 @@ div .aboutus-box__text::first-line {
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
-				bottom: 4.5em;
+				bottom: 6em;
 				margin: 0em auto;
 				width: 70%;
-
 				list-style: none;
 				&-item {
-					padding: 1em;
+					padding: 0.5em;
 					font-size: 1.4rem;
 					i {
 						margin-right: 0.3em;
+					}
+					i.fa-check {
+						color: rgb(8, 231, 108);
+					}
+					i.fa-minus {
+						color: #d8d8d8;
+					}
+					&--off {
+						color: #d8d8d8;
 					}
 				}
 			}
@@ -300,10 +299,11 @@ div .aboutus-box__text::first-line {
 				background-color: #fff;
 				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 				cursor: pointer;
+				transition: background-color 0.3s;
 			}
 
 			&-btn:hover {
-				background-color: rgb(2, 209, 140);
+				background-color: rgb(8, 231, 108);
 			}
 		}
 	}

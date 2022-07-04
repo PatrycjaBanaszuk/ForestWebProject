@@ -64,3 +64,11 @@
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	#offers .offers {
+		&__card {
+			width: 30%;
+		}
+	}
+}

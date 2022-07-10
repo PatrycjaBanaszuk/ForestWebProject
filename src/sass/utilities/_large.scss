@@ -63,12 +63,30 @@
 			}
 		}
 	}
-}
 
-@media (min-width: 992px) {
 	#offers .offers {
 		&__card {
 			width: 30%;
 		}
 	}
+
+	// #contact .contact {
+		
+	// 	&__info {
+	// 		margin: 1em 4em;
+
+	// 		&-item {
+	// 			margin: 3em 1em;
+
+	// 			&-tittle {
+	// 				margin-bottom: 1.5em;
+	// 				letter-spacing: 2px;
+	// 			}
+
+	// 			&-text {
+	// 				padding: 0.5em;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }

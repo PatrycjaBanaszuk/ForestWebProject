@@ -57,6 +57,9 @@ p {
 		// height: 20px;
 		font-size: 1.5em;
 		color: #000;
+		i {
+			margin-right: 0.3em;
+		}
 	}
 	&__list {
 		display: flex;
@@ -307,4 +310,10 @@ div .aboutus-box__text::first-line {
 			}
 		}
 	}
+}
+
+.contact {
+	
+	
+	
 }

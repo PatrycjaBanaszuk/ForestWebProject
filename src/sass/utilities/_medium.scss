@@ -14,13 +14,25 @@
 		}
 	}
 
-	// #contact .contact {
-	// 	&__info {
-	// 		display: flex;
-	// 		justify-content: flex-end;
-		
-	// 	}
-	// }
+	#contact .contact {
+		&__box {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			padding: 2em 0 0;
+
+			&-one {
+				padding: 0;
+				margin: 0;
+			}
+			&-info {
+				padding: 0 2em;
+				&-tittle {
+					font-size: 1.7em;
+				}
+			}
+		}
+	}
 }
 @media (max-width: 768px) {
 	#header .header__text {

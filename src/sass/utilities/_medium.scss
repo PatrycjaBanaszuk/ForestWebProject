@@ -19,18 +19,20 @@
 			flex-direction: row;
 			align-items: flex-start;
 			justify-content: center;
-			padding: 2em 0 0;
+			margin: 2em 0;
+
+
 
 			&-one {
-				padding: 0;
-				margin: 0;
+				padding: 3em 0 0;
+				margin: 0 2em;
 			}
-			&-info {
-				padding: 0 2em;
-				&-tittle {
-					font-size: 1.7em;
-				}
+
+			&-two {
+				padding: 1em 2em;
 			}
+			
+			
 		}
 	}
 }

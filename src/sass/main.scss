@@ -431,26 +431,51 @@ div .aboutus-box__text::first-line {
 .footer {
 	background-color: #f5f5f5;
 	color: #000;
+	overflow: hidden;
 	.container {
 		padding: 6em 2em 2em;
-
 	}
-	 &__box {
+	&__box {
+		white-space: nowrap;
 		font-size: 1.4rem;
 
-		// &-desktop {
-		// 	display: none;
-		// }
+		&-desktop {
+			display: none;
+		}
 
 		&-title {
 			margin-bottom: 1em;
 			font-size: 3rem;
 			text-transform: uppercase;
-		}
-
-		&-social {
+			
 			
 		}
-	 }
-	
+		&-text {
+			font-size: 2.4rem;
+		}
+		&-social {
+			margin: 1em 0 1em;
+			
+		}
+
+		&-link {
+			padding: 0 0.3em;
+			font-size: 3.6rem;
+			color: #000;
+			text-decoration: none;
+			transition: color 0.3s;
+
+			&:first-child {
+				padding-left: 0;
+			}
+			&:hover {
+				color: rgb(8, 231, 108);
+			}
+		}
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
 }

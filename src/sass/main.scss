@@ -16,6 +16,8 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
+	min-height: 100%;
+	margin-bottom: -50px;
 	font-size: 1.8rem;
 	background-color: #fff;
 	font-family: 'Montserrat', sans-serif;
@@ -320,9 +322,7 @@ div .aboutus-box__text::first-line {
 		flex-direction: column;
 		align-items: start;
 		padding: 0 2em;
-		// position: relative;
 		color: #000;
-		// text-align: center;
 		&-more {
 			margin-bottom: 1em;
 			&-tittle {
@@ -341,10 +341,6 @@ div .aboutus-box__text::first-line {
 				display: flex;
 				align-self: start;
 				white-space: nowrap;
-				// position: absolute;
-				// left: 50%;
-				// transform: translateX(-50%);
-				// top: 50%;
 				padding: 1em;
 				border-radius: 8px;
 				margin-top: 1em;
@@ -366,68 +362,6 @@ div .aboutus-box__text::first-line {
 	}
 }
 
-// .footer {
-// 	background-color: #f5f5f5;
-// 	overflow: hidden;
-
-// 	&__box {
-// 		display: flex;
-// 		flex-direction: column;
-// 		align-items: center;
-
-// 		&-one {
-// 			padding: 2em 0 0;
-// 			margin-bottom: 1em;
-// 		}
-// 		&-logo {
-// 			white-space: nowrap;
-// 			a {
-// 				color: #000;
-// 				font-size: 4rem;
-// 				text-transform: uppercase;
-// 				i {
-// 					margin-right: 0.5em;
-// 				}
-// 			}
-// 		}
-
-// 		&-two {
-// 			display: flex;
-// 			flex-direction: row;
-// 			padding: 0 1em;
-// 			margin-bottom: 1em;
-// 		}
-
-// 		&-info {
-// 			white-space: nowrap;
-// 			padding: 0 1em;
-// 			&-tittle {
-// 				font-size: 2rem;
-// 			}
-// 		}
-// 		&-content {
-// 			margin-top: 1em;
-// 			list-style: none;
-// 			line-height: 180%;
-// 			&-text {
-// 				a {
-// 					font-size: 1.5rem;
-// 				text-decoration: none;
-// 				color: #414141;
-// 				}
-// 				a:hover {
-// 					color:rgb(10, 207, 99);
-// 				}
-// 			}
-// 		}
-// 	}
-// 	&__text {
-// 		border-top: 1px solid #414141;
-// 		padding: 1em 0;
-// 		text-align: center;
-// 	}
-// }
-
 .footer {
 	.push {
 		height: 50px;
@@ -437,8 +371,6 @@ div .aboutus-box__text::first-line {
 	overflow: hidden;
 	.container {
 		padding: 6em 2em 2em;
-		min-height: 100%;
-		margin-bottom: -50px;
 	}
 	&__box {
 		white-space: nowrap;

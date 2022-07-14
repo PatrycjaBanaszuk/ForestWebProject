@@ -429,11 +429,16 @@ div .aboutus-box__text::first-line {
 // }
 
 .footer {
+	.push {
+		height: 50px;
+	}
 	background-color: #f5f5f5;
 	color: #000;
 	overflow: hidden;
 	.container {
 		padding: 6em 2em 2em;
+		min-height: 100%;
+		margin-bottom: -50px;
 	}
 	&__box {
 		white-space: nowrap;
@@ -447,15 +452,12 @@ div .aboutus-box__text::first-line {
 			margin-bottom: 1em;
 			font-size: 3rem;
 			text-transform: uppercase;
-			
-			
 		}
 		&-text {
 			font-size: 2.4rem;
 		}
 		&-social {
 			margin: 1em 0 1em;
-			
 		}
 
 		&-link {

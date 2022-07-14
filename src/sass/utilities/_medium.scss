@@ -12,29 +12,33 @@
 			margin: 1em;
 			width: 45%;
 		}
-	}
 
-	#contact .contact {
 		&__box {
-			flex-direction: row;
-			align-items: flex-start;
-			justify-content: center;
-			margin: 2em 0;
-
-
-
-			&-one {
-				padding: 3em 0 0;
-				margin: 0 2em;
-			}
-
-			&-two {
-				padding: 1em 2em;
-			}
-			
-			
+			width: 50%;
 		}
 	}
+
+	// footer .footer {
+	// 	&__box {
+	// 		flex-direction: row;
+	// 		align-items: flex-start;
+	// 		justify-content: center;
+	// 		margin: 2em 0;
+
+
+
+	// 		&-one {
+	// 			padding: 3em 0 0;
+	// 			margin: 0 2em;
+	// 		}
+
+	// 		&-two {
+	// 			padding: 1em 2em;
+	// 		}
+			
+			
+	// 	}
+	// }
 }
 @media (max-width: 768px) {
 	#header .header__text {

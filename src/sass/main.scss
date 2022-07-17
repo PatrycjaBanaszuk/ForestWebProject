@@ -455,3 +455,75 @@ div .aboutus-box__text::first-line {
 		}
 	}
 }
+
+.contact {	
+	width: 80%;
+	margin: auto;
+	margin-top: 4em;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 0 1px 5px #acabab;
+		padding: 30px 20px;
+		margin-bottom: 4em;
+		&-info {
+			flex-basis: 48%;
+			margin-bottom: 2em;
+			&-item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 3em;
+				i {
+					font-size: 2rem;
+					color: rgb(9, 114, 54);
+					margin: 1em;
+					margin-right: 2em;
+				}
+				h5 {
+					font-size: 2rem;
+					color: #1b1b1b;
+					font-weight: 200;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 1.4rem;
+					margin: 0;
+					padding: 0;
+					color: #9a9a9a;
+				}
+			}
+			form {
+				input,
+				textarea {
+					width: 100%;
+					padding: 1.5em;
+					margin-bottom: 1.7em;
+					outline: none;
+					border: 1px solid #acabab;
+					transition: border .3s;
+					&:hover {
+						border: 1px solid rgb(9, 114, 54);
+					}
+				}
+				textarea {
+					resize: vertical;
+				}
+				
+				
+			}
+			&-button {
+				padding: 1.2em;
+				border: 1px solid rgb(9, 114, 54);
+				background-color: transparent;
+				color: rgb(9, 114, 54);
+				cursor: pointer;
+				transition: color 0.5s, background-color 0.5s;
+
+				&:hover {
+					color: #fff;
+					background-color: rgb(9, 114, 54);
+				}
+			}
+		}
+	}
+}

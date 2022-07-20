@@ -50,9 +50,7 @@ function convertImages(done) {
 	done()
 }
 function handleKits(done) {
-	src(paths.html)
-	.pipe(kit())
-	.pipe(dest('./'));
+	src(paths.html).pipe(kit()).pipe(dest('./'))
 	done()
 }
 function cleanStuff(done) {
@@ -63,8 +61,8 @@ function cleanStuff(done) {
 function startBrowserSync(done) {
 	browserSync.init({
 		server: {
-			baseDir: './',
-		},
+			baseDir: './'
+		}
 	})
 	done()
 }

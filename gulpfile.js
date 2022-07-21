@@ -76,4 +76,4 @@ function watchForchanges(done) {
 
 const mainFunctions = parallel(handleKits, sassCompiler, javaScript, convertImages)
 exports.cleanStuff = cleanStuff
-exports.default = series(mainFunctions, startBrowserSync, watchForchanges)
+exports.default = series(mainFunctions)

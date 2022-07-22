@@ -14,3 +14,4 @@ const handleCurrentYear = () => {
 }
 handleCurrentYear()
 footerYear.addEventListener('click', handleCurrentYear)
+burgerBtn.addEventListener('click', handleNav)

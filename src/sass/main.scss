@@ -72,7 +72,7 @@ p {
 		width: 100%;
 		height: calc(100vh - 60px);
 		transform: translateX(100%);
-		background-color: #fff;
+		background-color: #097236;
 		opacity: 0;
 		transition: transform 0.5s, opacity 0.5s;
 		overflow: auto;
@@ -459,13 +459,13 @@ div .aboutus-box__text::first-line {
 .contact {	
 	width: 80%;
 	margin: auto;
-	margin-top: 4em;
+	margin-top: 3em;
 	&__box {
 		display: flex;
 		justify-content: space-between;
 		box-shadow: 0 1px 5px #acabab;
-		padding: 30px 20px;
-		margin: 4em 0;
+		padding: 3em 2em;
+		margin: 3em 0;
 		&-info {
 			flex-basis: 48%;
 			margin-bottom: 2em;
@@ -493,6 +493,7 @@ div .aboutus-box__text::first-line {
 				}
 			}
 			form {
+				margin-left: 1em;
 				input,
 				textarea {
 					width: 100%;
@@ -529,15 +530,18 @@ div .aboutus-box__text::first-line {
 }
 
 .location {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	padding: 0 4em;
+
+	
 
 	&__map {
 		overflow:hidden;
 		padding-bottom:56.25%;
 		position:relative;
 		height:0;
+		margin-top: 2em;
 		margin-bottom: 4em;
 		iframe {
 			position:absolute;

@@ -465,7 +465,7 @@ div .aboutus-box__text::first-line {
 		justify-content: space-between;
 		box-shadow: 0 1px 5px #acabab;
 		padding: 30px 20px;
-		margin-bottom: 4em;
+		margin: 4em 0;
 		&-info {
 			flex-basis: 48%;
 			margin-bottom: 2em;
@@ -527,3 +527,27 @@ div .aboutus-box__text::first-line {
 		}
 	}
 }
+
+.location {
+	width: 80%;
+	margin: auto;
+	padding: 0 4em;
+
+	&__map {
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+		margin-bottom: 4em;
+		iframe {
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+			width:100%;
+			
+		}
+	}
+}
+
+

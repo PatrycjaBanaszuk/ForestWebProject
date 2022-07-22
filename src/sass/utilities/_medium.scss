@@ -59,6 +59,13 @@
 		align-items: center;
 	}
 
+	#contact .contact {
+		&__box {
+			flex-direction: column;
+			box-shadow: none;
+		}
+	}
+
 	footer .footer {
 		&__boxes {
 			display: flex;

@@ -405,6 +405,13 @@ div .aboutus-box__text::first-line {
 		}
 	}
 }
+.header {
+	&__text-services {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
 
 .contact {
 	width: 80%;

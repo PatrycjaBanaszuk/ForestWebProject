@@ -362,6 +362,149 @@ div .aboutus-box__text::first-line {
 	}
 }
 
+
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	margin: 4em 2em;
+
+	&__title {
+		margin-top: 2em;
+	}
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+		&-service {
+			flex: 1 1 30rem;
+			border-radius: 0.5rem;
+			background-color: #fff;
+			padding: 2rem;
+			text-align: center;
+			border-radius: 8px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+
+			i {
+				color: rgb(9, 114, 54);
+				font-size: 2rem;
+				padding: 2em 0;
+			}
+			h3 {
+				color: #1b1b1b;
+				font-size: 1.5rem;
+				padding-top: 1rem;
+			}
+			p {
+				color: #1b1b1b;
+				font-size: 1rem;
+				padding: 1rem 0;
+				line-height: 180%;
+			}
+		}
+	}
+}
+
+.contact {
+	width: 80%;
+	margin: auto;
+	margin-top: 3em;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 0 1px 5px #acabab;
+		padding: 3em 2em;
+		margin: 3em 0;
+		&-info {
+			flex-basis: 48%;
+			margin-bottom: 2em;
+			&-item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 3em;
+				i {
+					font-size: 2rem;
+					color: rgb(9, 114, 54);
+					margin: 1em;
+					margin-right: 2em;
+				}
+				h5 {
+					font-size: 2rem;
+					color: #1b1b1b;
+					font-weight: 200;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 1.4rem;
+					margin: 0;
+					padding: 0;
+					color: #9a9a9a;
+				}
+			}
+			
+
+			form {
+				position: relative;
+				margin-left: 1em;
+				input,
+				textarea {
+					width: 100%;
+					padding: 1.5em;
+					margin-bottom: 1.7em;
+					border-radius: 8px;
+					outline: none;
+					border: 1px solid #acabab;
+					transition: border 0.3s;
+					&:hover {
+						border: 1px solid rgb(9, 114, 54);
+					}
+				}
+				textarea {
+					resize: vertical;
+				}
+			}
+			
+			&-button {
+				padding: 1.2em;
+				border-radius: 8px;
+				border: none;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+				background-color: transparent;
+				color: rgb(9, 114, 54);
+				cursor: pointer;
+				transition: color 0.5s, background-color 0.5s;
+
+				&:hover {
+					color: #fff;
+					background-color: rgb(9, 114, 54);
+				}
+			}
+		}
+	}
+}
+
+.location {
+	width: 100%;
+	margin: auto;
+	padding: 0 4em;
+
+	&__map {
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		position: relative;
+		height: 0;
+		margin-top: 2em;
+		margin-bottom: 4em;
+		iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
 .footer {
 	.push {
 		height: 50px;
@@ -413,145 +556,3 @@ div .aboutus-box__text::first-line {
 		text-align: center;
 	}
 }
-
-.services {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1.5rem;
-	margin: 4em 2em;
-
-	&__title {
-		margin-top: 2em;
-	}
-	&__box {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1.5rem;
-		&-service {
-			flex: 1 1 30rem;
-			border-radius: 0.5rem;
-			background-color: #fff;
-			padding: 2rem;
-			text-align: center;
-			border-radius: 8px;
-			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-
-			i {
-				color: rgb(9, 114, 54);
-				font-size: 2rem;
-				padding: 2em 0;
-			}
-			h3 {
-				color: #1b1b1b;
-				font-size: 1.5rem;
-				padding-top: 1rem;
-			}
-			p {
-				color: #1b1b1b;
-				font-size: 1rem;
-				padding: 1rem 0;
-				line-height: 180%;
-			}
-		}
-	}
-}
-
-.contact {	
-	width: 80%;
-	margin: auto;
-	margin-top: 3em;
-	&__box {
-		display: flex;
-		justify-content: space-between;
-		box-shadow: 0 1px 5px #acabab;
-		padding: 3em 2em;
-		margin: 3em 0;
-		&-info {
-			flex-basis: 48%;
-			margin-bottom: 2em;
-			&-item {
-				display: flex;
-				align-items: center;
-				margin-bottom: 3em;
-				i {
-					font-size: 2rem;
-					color: rgb(9, 114, 54);
-					margin: 1em;
-					margin-right: 2em;
-				}
-				h5 {
-					font-size: 2rem;
-					color: #1b1b1b;
-					font-weight: 200;
-					text-transform: uppercase;
-				}
-				p {
-					font-size: 1.4rem;
-					margin: 0;
-					padding: 0;
-					color: #9a9a9a;
-				}
-			}
-			form {
-				margin-left: 1em;
-				input,
-				textarea {
-					width: 100%;
-					padding: 1.5em;
-					margin-bottom: 1.7em;
-					outline: none;
-					border: 1px solid #acabab;
-					transition: border .3s;
-					&:hover {
-						border: 1px solid rgb(9, 114, 54);
-					}
-				}
-				textarea {
-					resize: vertical;
-				}
-				
-				
-			}
-			&-button {
-				padding: 1.2em;
-				border: 1px solid rgb(9, 114, 54);
-				background-color: transparent;
-				color: rgb(9, 114, 54);
-				cursor: pointer;
-				transition: color 0.5s, background-color 0.5s;
-
-				&:hover {
-					color: #fff;
-					background-color: rgb(9, 114, 54);
-				}
-			}
-		}
-	}
-}
-
-.location {
-	width: 100%;
-	margin: auto;
-	padding: 0 4em;
-
-	
-
-	&__map {
-		overflow:hidden;
-		padding-bottom:56.25%;
-		position:relative;
-		height:0;
-		margin-top: 2em;
-		margin-bottom: 4em;
-		iframe {
-			position:absolute;
-			left:0;
-			top:0;
-			height:100%;
-			width:100%;
-			
-		}
-	}
-}
-
-
